@@ -99,15 +99,47 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
- h5, .h5 {
+ h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
 }
 
-h5, .h5 {
-  font-size: 1.25rem;
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2, .h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 2rem;
+  }
+}
+
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.5rem;
+  }
 }
 
 p {
@@ -229,7 +261,7 @@ button:not(:disabled),
     max-width: 1140px;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
    .container {
     max-width: 1320px;
   }
@@ -379,14 +411,6 @@ button:not(:disabled),
   border-radius: var(--bs-card-border-radius);
 }
 
-.card-title {
-  margin-bottom: var(--bs-card-title-spacer-y);
-}
-
-.card-text:last-child {
-  margin-bottom: 0;
-}
-
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -486,6 +510,10 @@ button:not(:disabled),
   }
 }
 
+.d-block {
+  display: block !important;
+}
+
 .d-flex {
   display: flex !important;
 }
@@ -496,6 +524,10 @@ button:not(:disabled),
 
 .vh-100 {
   height: 100vh !important;
+}
+
+.justify-content-end {
+  justify-content: flex-end !important;
 }
 
 .justify-content-center {
@@ -518,13 +550,8 @@ button:not(:disabled),
   margin: 1rem !important;
 }
 
-.mx-2 {
-  margin-right: 0.5rem !important;
-  margin-left: 0.5rem !important;
-}
-
-.mt-3 {
-  margin-top: 1rem !important;
+.mt-1 {
+  margin-top: 0.25rem !important;
 }
 
 .mb-3 {
@@ -537,6 +564,14 @@ button:not(:disabled),
 
 .p-0 {
   padding: 0 !important;
+}
+
+.p-3 {
+  padding: 1rem !important;
+}
+
+.pt-1 {
+  padding-top: 0.25rem !important;
 }
 
 .pt-2 {
@@ -569,41 +604,121 @@ button:not(:disabled),
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.rounded-top {
-  border-top-left-radius: var(--bs-border-radius) !important;
-  border-top-right-radius: var(--bs-border-radius) !important;
+.rounded-3 {
+  border-radius: var(--bs-border-radius-lg) !important;
 }
+body {
+  background-color: hsl(30deg, 38%, 92%);
+}
+
 .price-primary {
   color: hsl(158deg, 36%, 37%);
   font-family: "Fraunces", serif;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .price-secondary {
   color: hsl(228deg, 12%, 48%);
   text-decoration: line-through;
-  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-body {
-  background-color: hsl(30deg, 38%, 92%);
-}
-
-.card-title {
+.title {
   color: hsl(212deg, 21%, 14%);
   font-family: "Fraunces", serif;
   font-weight: bold;
-  font-size: 2.1rem;
+  font-size: 1.5rem;
 }
 
-.card-text {
+.text-perfume {
   color: hsl(228deg, 12%, 48%);
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .text-spacing {
   letter-spacing: 0.3rem;
+}
+
+.img-change {
+  border-radius: 15px 15px 0 0;
+}
+
+.card-col {
+  border-radius: 0 0 15px 15px;
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 2.8rem;
+  }
+  .text-perfume {
+    font-size: 1.3rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .price-primary {
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  .price-secondary {
+    font-size: 1rem;
+    margin-top: 40px !important;
+    margin-left: 35px !important;
+  }
+  .web {
+    margin: 30px;
+  }
+  .btn {
+    height: 80px;
+    font-size: larger;
+  }
+  .div-btn {
+    margin-top: 10px;
+  }
+  .img-change {
+    border-radius: 15px 0 0 15px;
+  }
+  .card-col {
+    border-radius: 0 15px 15px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .title {
+    font-size: 3.2rem;
+  }
+  .text-perfume {
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .price-primary {
+    font-size: 3rem;
+    margin-top: 30px;
+  }
+  .price-secondary {
+    font-size: 1.5rem;
+    margin-top: 50px !important;
+    margin-left: 35px !important;
+  }
+  .web {
+    margin: 30px;
+  }
+  .btn {
+    height: 80px;
+    font-size: larger;
+  }
+  .div-btn {
+    margin-top: 30px;
+  }
+  .img-change {
+    border-radius: 15px 0 0 15px;
+  }
+  .card-col {
+    border-radius: 0 15px 15px 0;
+  }
 }

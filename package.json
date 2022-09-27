@@ -1,0 +1,23 @@
+{
+  "name": "product-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "purgecss --css sass/custom.css --content index.html --output css/reducido.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebaplz/product-preview-card-component-main.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebaplz/product-preview-card-component-main/issues"
+  },
+  "homepage": "https://github.com/Sebaplz/product-preview-card-component-main#readme"
+}

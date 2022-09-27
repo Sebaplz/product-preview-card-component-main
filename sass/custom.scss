@@ -1,44 +1,118 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
 .price-primary {
   color: hsl(158, 36%, 37%);
   font-family: "Fraunces", serif;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .price-secondary {
   color: hsl(228, 12%, 48%);
   text-decoration: line-through;
-  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-.backgorund-primary {
-  background-color: hsl(158, 36%, 37%);
-}
-
-.backgorund-primary:hover {
-  display: block;
-}
-
-body {
-  background-color: hsl(30, 38%, 92%);
-}
-
-.card-title {
+.title {
   color: hsl(212, 21%, 14%);
   font-family: "Fraunces", serif;
   font-weight: bold;
-  font-size: 2.1rem;
+  font-size: 1.5rem;
 }
 
-.card-text {
+.text-perfume {
   color: hsl(228, 12%, 48%);
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .text-spacing {
   letter-spacing: 0.3rem;
+}
+
+.img-change {
+  border-radius: 15px 15px 0 0;
+}
+
+.card-col {
+  border-radius: 0 0 15px 15px;
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 2.8rem;
+  }
+  .text-perfume {
+    font-size: 1.3rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .price-primary {
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  .price-secondary {
+    font-size: 1rem;
+    margin-top: 40px !important;
+    margin-left: 35px !important;
+  }
+  .web {
+    margin: 30px;
+  }
+  .btn {
+    height: 80px;
+    font-size: larger;
+  }
+  .div-btn {
+    margin-top: 10px;
+  }
+  .img-change {
+    border-radius: 15px 0 0 15px;
+  }
+  .card-col {
+    border-radius: 0 15px 15px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 3.2rem;
+  }
+  .text-perfume {
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .price-primary {
+    font-size: 3rem;
+    margin-top: 30px;
+  }
+  .price-secondary {
+    font-size: 1.5rem;
+    margin-top: 50px !important;
+    margin-left: 35px !important;
+  }
+  .web {
+    margin: 30px;
+  }
+  .btn {
+    height: 80px;
+    font-size: larger;
+  }
+  .div-btn {
+    margin-top: 30px;
+  }
+  .img-change {
+    border-radius: 15px 0 0 15px;
+  }
+  .card-col {
+    border-radius: 0 15px 15px 0;
+  }
 }
